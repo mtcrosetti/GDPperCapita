@@ -13,14 +13,15 @@ from functools import wraps
 
 app = Flask(__name__)
 
-# conn = 'mongodb://localhost:27017'
-# client = pymongo.MongoClient(conn)
-# db = client.Project2_data
-# collection = db.GEOJSON
-# results = db.GEOJSON.find_one()
-# c={}
-# c.update({"type":results["type"],"features":results["features"]})
-
+#uncommented from here
+conn = 'mongodb://localhost:27017'
+client = pymongo.MongoClient(conn)
+db = client.Project2_data
+collection = db.GEOJSON
+results = db.GEOJSON.find_one()
+c={}
+c.update({"type":results["type"],"features":results["features"]})
+#to here
 #################################################
 # Database Setup
 #################################################
